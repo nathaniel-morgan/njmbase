@@ -18,8 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of njmbase is writing some personal use functions without any dependencies. Ideally
-These can be loaded onto and empty R session and immediately work without any other 
+The goal of njmbase is writing some personal use functions without any dependencies. Ideally,
+these can be loaded onto an empty R session and immediately work without any other 
 packages needed. 
 
 ## Installation

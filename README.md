@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 The goal of njmbase is writing some personal use functions without any
-dependencies. Ideally These can be loaded onto and empty R session and
+dependencies. Ideally, these can be loaded onto an empty R session and
 immediately work without any other packages needed.
 
 ## Installation
@@ -29,9 +29,9 @@ negative.
 ``` r
 library(njmbase)
 race(rnorm(1e5),rnorm(1e7))
-#> [1] -0.698
+#> [1] -0.7
 race(rnorm(1e7),rnorm(1e5))
-#> [1] 0.634
+#> [1] 0.654
 ```
 
 We can see that drawing more random numbers from rnorm takes more time.
