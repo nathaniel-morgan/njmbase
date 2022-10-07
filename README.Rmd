@@ -39,7 +39,7 @@ If the first process is faster the difference in time will be negative.
 ```{r example}
 library(njmbase)
 race(rnorm(1e5),rnorm(1e7))
-race(rnorm(1e7),rnorm(1e5))
+race(rnorm(1e7),rnorm(1e5),simple = FALSE)
 ```
 
 We can see that drawing more random numbers from rnorm takes more time.

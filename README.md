@@ -29,9 +29,16 @@ negative.
 ``` r
 library(njmbase)
 race(rnorm(1e5),rnorm(1e7))
-#> [1] -0.7
-race(rnorm(1e7),rnorm(1e5))
-#> [1] 0.654
+#> [1] -0.699
+race(rnorm(1e7),rnorm(1e5),simple = FALSE)
+#> $difference
+#> [1] 0.637
+#> 
+#> $time_a
+#> [1] 0.643
+#> 
+#> $time_b
+#> [1] 0.006
 ```
 
 We can see that drawing more random numbers from rnorm takes more time.
