@@ -4,12 +4,14 @@
 \alias{race}
 \title{Race two functions}
 \usage{
-race(a, b)
+race(a, b, simple = TRUE)
 }
 \arguments{
 \item{a}{A process you want to compare the run time with process b}
 
 \item{b}{The process to compare the run time against process a}
+
+\item{simple}{whether to return just the difference, or a list including the individual times}
 }
 \value{
 a length 1 double of the difference in seconds process a took compared to process b.
@@ -19,5 +21,5 @@ Race two functions
 }
 \examples{
 race(rnorm(1e5),rnorm(1e7))
-race(rnorm(1e7),rnorm(1e5))
+race(rnorm(1e7),rnorm(1e5),simple=FALSE)
 }
